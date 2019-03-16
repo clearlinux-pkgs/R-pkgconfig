@@ -1,0 +1,9 @@
+# This file contains recursive sources that require this package
+R-AmesHousing
+R-RSQLite
+R-dplyr
+R-ggvis
+R-hms
+R-igraph
+R-janitor
+R-tibble
