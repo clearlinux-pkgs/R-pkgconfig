@@ -4,7 +4,7 @@
 #
 Name     : R-pkgconfig
 Version  : 2.0.2
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/pkgconfig_2.0.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pkgconfig_2.0.2.tar.gz
 Summary  : Set R package configuration options on a per-package basis.
@@ -28,10 +28,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552780634
+export SOURCE_DATE_EPOCH=1552934120
 
 %install
-export SOURCE_DATE_EPOCH=1552780634
+export SOURCE_DATE_EPOCH=1552934120
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

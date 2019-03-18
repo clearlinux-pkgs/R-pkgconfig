@@ -1,9 +1,17 @@
 # This file contains recursive sources that require this package
 R-AmesHousing
 R-RSQLite
+R-dbplyr
+R-diffusionMap
 R-dplyr
 R-ggvis
+R-haplo.stats
 R-hms
 R-igraph
 R-janitor
+R-phangorn
+R-princurve
+R-solrium
+R-survey
+R-threejs
 R-tibble
