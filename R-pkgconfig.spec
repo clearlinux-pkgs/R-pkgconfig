@@ -4,7 +4,7 @@
 #
 Name     : R-pkgconfig
 Version  : 2.0.3
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/pkgconfig_2.0.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pkgconfig_2.0.3.tar.gz
 Summary  : Set R package configuration options on a per-package basis.
