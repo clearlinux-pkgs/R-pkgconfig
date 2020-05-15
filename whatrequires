@@ -1,21 +1,8 @@
 # This file contains recursive sources that require this package
-R-AmesHousing
 R-BoolNet
 R-RSQLite
-R-car
 R-dplyr
-R-dtplyr
-R-flexsurv
 R-hms
 R-igraph
-R-network
-R-progress
 R-readODS
-R-readr
-R-rncl
-R-sna
-R-solrium
-R-survey
-R-systemfit
 R-tibble
-R-tidyr

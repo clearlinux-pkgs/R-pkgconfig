@@ -4,39 +4,36 @@
 #
 Name     : R-pkgconfig
 Version  : 2.0.3
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/pkgconfig_2.0.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pkgconfig_2.0.3.tar.gz
-Summary  : Set R package configuration options on a per-package basis.
+Summary  : Private Configuration for 'R' Packages
 Group    : Development/Tools
 License  : MIT
 BuildRequires : buildreq-R
 
 %description
-# Private configuration for R packages
-[![Linux Build Status](https://travis-ci.org/r-lib/pkgconfig.svg?branch=master)](https://travis-ci.org/r-lib/pkgconfig)
-[![Windows Build status](https://ci.appveyor.com/api/projects/status/github/r-lib/pkgconfig?svg=true)](https://ci.appveyor.com/project/gaborcsardi/pkgconfig)
-[![](http://www.r-pkg.org/badges/version/pkgconfig)](http://www.r-pkg.org/pkg/pkgconfig)
-[![](http://cranlogs.r-pkg.org/badges/pkgconfig)](http://www.r-pkg.org/pkg/pkgconfig)
-[![Coverage Status](https://img.shields.io/codecov/c/github/r-lib/pkgconfig/master.svg)](https://codecov.io/github/r-lib/pkgconfig?branch=master)
+Options set by a given package only apply to that package,
+    other packages are unaffected.
 
 %prep
 %setup -q -c -n pkgconfig
+cd %{_builddir}/pkgconfig
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569260813
+export SOURCE_DATE_EPOCH=1589509935
 
 %install
-export SOURCE_DATE_EPOCH=1569260813
+export SOURCE_DATE_EPOCH=1589509935
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
