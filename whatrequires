@@ -1,8 +1,5 @@
 # This file contains recursive sources that require this package
-R-BoolNet
 R-RSQLite
-R-dplyr
 R-hms
 R-igraph
-R-readODS
 R-tibble
